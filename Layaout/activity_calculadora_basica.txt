@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    tools:context=".CalculadoraBasica">
+
+<TextView
+    android:id="@+id/txtcaja"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:text=""
+    android:background="#B0C4DE"
+    />
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcaja"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Btna1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#075e54"
+                android:textSize="20sp"
+                android:text="" />
+            <Button
+                android:id="@+id/Btna5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#075e54"
+                android:textSize="20sp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Btn7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton7"
+                android:text="7"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton4"
+                android:text="4"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton1"
+                android:text="1"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btnpun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Botonpunt"
+                android:text="."
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Btna2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#075e54"
+                android:textSize="20sp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Btnaoff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="off"
+                android:text="OFF"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton8"
+                android:text="8"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton5"
+                android:text="5"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton2"
+                android:text="2"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton0"
+                android:text="0"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Btna3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#075e54"
+                android:textSize="20sp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Btndel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botonclear"
+                android:text="DEL"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton9"
+                android:text="9"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton6"
+                android:text="6"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Boton3"
+                android:text="3"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btnigu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Botonigu"
+                android:text="="
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Btna4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:backgroundTint="#075e54"
+                android:text="" />
+
+            <Button
+                android:id="@+id/Btnc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botonborrar"
+                android:text="C"
+
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btndiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botondiv"
+                android:text="÷"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btnmul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botonmul"
+                android:text="X"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btnres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botonres"
+                android:text="-"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/Btnsum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#128c7e"
+                android:onClick="Botonsum"
+                android:text="+"
+                android:textColor="#ece5dd"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

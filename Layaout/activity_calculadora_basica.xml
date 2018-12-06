@@ -229,7 +229,7 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#128c7e"
                 android:onClick="Botondiv"
-                android:text="÷"
+                android:text="Ã·"
                 android:textColor="#ece5dd"
                 android:textSize="20sp" />
 
